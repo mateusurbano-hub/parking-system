@@ -1,0 +1,41 @@
+# Ignorar uploads de imagens das placas
+uploads/
+!uploads/.gitkeep
+
+# Ignorar versões do FPDF
+fpdf.zip
+fpdf/*.zip
+fpdf/*.tar
+fpdf/examples/
+
+# Logs
+*.log
+logs/
+*.txt
+
+# Sessões e cache
+session/
+*.session
+*.cache
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Ignorar IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignorar arquivos do sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Ignorar arquivos do Composer (caso instalar depois)
+vendor/
+composer.lock
+
+# Ignorar configs locais de desenvolvimento
+config-local.php
+.env
