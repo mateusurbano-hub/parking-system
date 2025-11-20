@@ -1,0 +1,212 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #050505;
+    color: #f5f5f5;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 12px;               /* DIMINUÍ O ESPAÇAMENTO */
+}
+
+/* CARDS */
+.card {
+    background: #111;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+/* TITULOS */
+h1, h2 {
+    font-size: 1.6rem;           /* Ajuste mais equilibrado */
+    margin: 0 0 14px;
+}
+
+/* NAVEGAÇÃO (ABAS) */
+.nav {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #222;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.nav a.active {
+    background: #ff9800;
+    color: #121212;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* CAMPOS */
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;                /* Ajuste fino */
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* INPUT FILE (corrige o botão no celular) */
+input[type="file"]::-webkit-file-upload-button {
+    background: #ff9800;
+    color: #121212;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* BOTÕES */
+button,
+input[type="submit"],
+a.botao {
+    display: block;
+    width: 100%;
+    padding: 14px;                /* DIMINUI VERTICAL */
+    border-radius: 999px;
+    border: none;
+    background: #ff9800;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 6px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+a.botao:hover {
+    background: #ffb74d;
+}
+/* LINKS NORMAIS (fora das abas) */
+a {
+    color: #ffb74d;               /* laranja claro - visível */
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #ffe082;               /* mais claro no hover */
+}
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 8px 4px;
+    border-bottom: 1px solid #333;
+}
+
+.badge-ativo {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.badge-finalizado {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* FOTOS */
+img.foto-placa {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+/* AJUSTE DESKTOP */
+@media (min-width: 768px) {
+    .container {
+        padding-top: 24px;
+    }
+}
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+/* Ícone do menu (3 tracinhos) */
+.menu-icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Menu lateral */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    z-index: 9998;
+}
+
+.side-menu a {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #333;
+}
